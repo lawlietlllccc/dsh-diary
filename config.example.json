@@ -1,0 +1,32 @@
+{
+  "diary": {
+    "enabled": true,
+    "file": "",
+    "portraitFile": "",
+    "settleAt": "23:30",
+    "settleHour": 23,
+    "fadeGraceDays": 3,
+    "heartRemindEveryDays": 7,
+    "hintCooldownDays": 3,
+    "injectMaxEntries": 10,
+    "injectMaxChars": 1200,
+    "portraitThreshold": 80
+  },
+  "journal": {
+    "enabled": true,
+    "publicDir": "",
+    "privateDir": "",
+    "writeAt": "23:30",
+    "catchupDays": 7,
+    "preset": "default",
+    "workspaceTitle": "日记",
+    "turnTimeoutMs": 180000,
+    "maxAttemptsPerDay": 3,
+    "retryGapMs": 120000,
+    "maxDigestChars": 8000,
+    "maxDigestLines": 160,
+    "logDir": "",
+    "logRetentionDays": 10,
+    "digestPerHour": 6
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "dsh-diary",
+  "version": "0.1.0",
+  "description": "日记面板：把基于文件的日记（公开/私密）与「会变糊的记忆」搬进 DSH 设置页——概览、翻看、搜索、在指纹守卫与改前备份下谨慎编辑。",
+  "type": "module",
+  "main": "./index.js",
+  "license": "MIT",
+  "keywords": ["dsh", "deepseek-harness", "cordis-plugin", "diary", "journal", "memory", "settings"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "meta": {
+    "title": "日记面板",
+    "description": "日记不是日志：一份给人看、一份只给自己看；记忆会变糊、会淡忘。面板负责看与修，写入一律带指纹守卫与改前备份。"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true }
+  },
+  "engines": { "dsh": ">=0.1.7-rc.2" }
+}

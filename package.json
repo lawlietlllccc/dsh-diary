@@ -1,0 +1,28 @@
+{
+  "name": "dsh-diary",
+  "version": "0.1.0",
+  "description": "日记不是日志：一份写给别人看、一份只写给自己；记忆会变糊、会淡忘，也会因为被反复想起而留得更久。",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "deepseek-harness", "diary", "journal", "memory", "mcp", "cordis-plugin"],
+  "files": ["src", "plugins", "docs", "scripts", "config.example.json", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node scripts/test-diary.mjs && node scripts/test-journal.mjs",
+    "test:diary": "node scripts/test-diary.mjs",
+    "test:journal": "node scripts/test-journal.mjs",
+    "selftest": "node plugins/dsh-diary/index.js --selftest",
+    "mcp": "node src/mcp-diary.js",
+    "install:plugin": "node scripts/install-diary-plugin.mjs desktop"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lawlietlllccc/dsh-diary.git"
+  }
+}

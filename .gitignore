@@ -1,0 +1,19 @@
+# 运行时数据、真实日记、凭据 —— 一律不入库
+state/
+日记/
+日记-私密/
+*.jsonl
+*.bak
+config.json
+
+# 依赖与日志
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
