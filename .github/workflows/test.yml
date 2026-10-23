@@ -1,0 +1,20 @@
+name: 测试
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - name: 记忆内核 + 日记本内核 + MCP 工具面
+        run: npm test
+      - name: 面板插件自检（临时目录，不碰真实数据）
+        run: npm run selftest
